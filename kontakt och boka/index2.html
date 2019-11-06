@@ -2,82 +2,100 @@
 <html lang="sv" dir="ltr">
 	<head>
 		<meta charset="utf-8">
-		<title>festosauros</title>
+    <title>festosauros</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="style2.css">
 	</head>
 	<body>
       
-		<div class="grid">
-			<div class="header">
+		<div class="container">
+			<header class="header">
                 <img src="festosauruslogotext.png" alt="logga">
                 <ul>
                  <li>
                    <a href="../projekt2.html">Boka oss</a>
                  </li>
                  <li>
-                   <a href="#">Om oss</a>
+                   <a href="../omoss.html">Om oss</a>
                  </li>
                  <li>
                    <a href="index2.html">Kontakt</a>
                  </li>
                </ul>
                
-			</div>
-          
-			<div class="contact"> 
-              <div class="header1">kontakt och boka här</div>
+              </header>
+      <main> 
+			  <nav class="contact"> 
+              <div><h1>kontakt och boka här</h1></div>
               <div>
                 <form action="target.html" method="post">
                   
-                    <label for="1stName">Skriv in ditt förnamn:</label><br>
-                    <input type="text" name="name" placeholder="firstName" id="1stName" />
+                    <label for="1stName">Förnamn*</label><br>
+                    <input type="text" name="name" placeholder="First name ..." id="1stName" />
                     <br><br>
-	                <label for="sirName">Skriv in ditt efternamn:</label><br>
-                    <input type="text" name="lastName" id="sirName" placeholder="lastName"/>
+	                <label for="sirName">Efternamn*</label><br>
+                    <input type="text" name="lastName" id="sirName" placeholder="Last name ..."/>
                     <br><br>
-                    <label for="email">Skriv in din Email:</label><br>
+                    <label for="email">Email*</label><br>
                     <input type="text" name="email" id="email" placeholder="Email"/>
                     <br><br>
-                    <textarea rows="10" cols="40" placeholder="Skriv in ditt meddelande för att boka eller ställa frågor:"></textarea>
+                    <textarea name="styled-textarea" id="styled" onfocus="this.value=''; setbg('#e5fff3');" onblur="setbg('white')">Skriv in ditt meddelande för att boka eller ställa frågor:</textarea> 
                    <br><button type="button">Skicka!</button>
                   
                 </form>
 
               </div>
               
-      </div>
+        </nav>
           
-      <div class="main">
-                <div class="header">Vi som jobbar här </div>
+        <article class="article">
+                <h1 class="header1">Vi som jobbar här </h1>
            
-              <div>
-                <img src="neda.jpg" alt="Neda"><br>
-                
-                    Neda Jahadi<br>
-                    <a href="#">neda_jahadi@yahoo.com</a><br>
+              <div class="box fade-in">
+                <img src="neda.jpg" alt="Neda">
+                <div class="text">
+                    <h1>Neda Jahadi<br>
+      
                      0760866239
+                    </h1>
+                </div>
               </div>
-              <div>
-                 <img src="nancy.jpg" alt="Nancy" ><br>
-                 Nancy Blom<br>
-                  <a href="#">Nancyblom@hotmail.com</a><br>
-                  0707453515
+              <div class="box fade-in">
+                 <img src="nancy.jpg" alt="Nancy" >
+                <div class="text">
+                  <h1>Nancy Blom<br>
                 
-               </div>
-              <div><img src="emil.jpg" alt="Emil" ><br>
-                  Emil Hammarstrand<br>
-
-                  <a href="#">emilhammarstrand@hotmail.com</a><br>
-                  0723078278</div>
-              <div><img src="arthur.jpg" alt="Arthur"><br>
-                 Arthur Oresjö <br>
-                  <a href="#">arthur_jul@hotmail.com</a><br>
-                  0707949288
+                  0707453515
+                  </h1>
+                </div>
+                
               </div>
-		  </div>
+              <div class="box fade-in">
+                <img src="emil.jpg" alt="Emil" >
+                <div class="text">
+                  <h1>
+                    Emil Hammarstrand<br>
 
-      <div></div>
+                  
+                    0723078278
+                  </h1>
+                </div>
+              </div>
+              <div class="box fade-in">
+                <img src="arthur.jpg" alt="Arthur">
+                <div class="text">
+                  <h1>
+                  Arthur Oresjö <br>
+                  
+                  0707949288
+                  </h1>
+                </div>
+              </div>
+        </article>
+    </main>
 
-    </div>
+    <footer>footer</footer>
+
+  </div>
 	</body>
 </html>
