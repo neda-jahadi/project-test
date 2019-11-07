@@ -1,3 +1,38 @@
+.imgcontainer {
+  position: relative;
+  
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 2s ease-in;
+  background-color: #ffeeec;
+}
+
+.imgcontainer:hover .overlay {
+  opacity: 0.8;
+}
+
+.text1 {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align:left;
+}
+.article{
+  position: relative;
+}
 body {
   background: #ffeeec;
 }
@@ -172,29 +207,5 @@ img {
   width: 40%;
   height: 100%;
 }
-  .box{
-        position: relative;
-        display: inline-block; /* Make the width of box same as image */
-        width: 100%;
-       
-  }
-    .box .text{
-        position: absolute;
-        z-index: 999;
-        margin: 0 auto;
-        left: 0;
-        right: 0;
-        top: 40%; /* Adjust this value to move the positioned div up and down */
-        text-align: center;
-        width: 100%; /* Set the width of the positioned div */
-        opacity: 0.6;
-    }
   
-  .fade-in {
-	opacity: 1.0;
-	
-}
-.fade-in:hover > img {
-	opacity: 0.2;
-}
 
