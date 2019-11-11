@@ -91,6 +91,7 @@ header, main, footer {
 }
 .article {
   background-color: rgba(242,242,242,0.6);
+  width: 90%;
 }
 .contact {
   display: grid;
@@ -117,6 +118,7 @@ h1 {
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  
   .container {
     grid-template-rows: 5em 1fr 70em;
   } 
@@ -137,14 +139,23 @@ h1 {
     grid-template-rows: 3em 1fr 1fr 1fr 5em;
     grid-template-columns: 1fr;
   }
-  
+   .f-footer{
+     display: flex;
+    flex-direction: column;
+  }
+  .f-footer button {
+    padding: 3px;
+    margin: 2px;
+  }
   
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 601px) and (max-width: 767px) {
+  
   .container {
     grid-template-rows: 5em 1fr 70em;
+    
   } 
   main {
     grid-template-rows: 40em 1fr;
@@ -170,6 +181,9 @@ h1 {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 768px) {
+  .container {
+    grid-template-rows: 5em 1fr 40em;
+  }
   main {
     grid-template-rows: 40em 1fr;
     grid-template-columns: 1fr;
@@ -192,6 +206,12 @@ h1 {
   }
   .f-header, .f-footer {
     grid-column: 1/4;
+  }
+  .f-footer button {
+    width: 10%;
+  
+    margin: 2px;
+  
   }
   
 }
@@ -216,7 +236,7 @@ button:hover {
 	button {
 		width: 100%;
     background-color: #4CAF50;
-  
+    
     font-size: 1.5em;
     color: white;
     padding: 16px 22px;
@@ -224,7 +244,8 @@ button:hover {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-	}
+  }
+  
 }
 
 .container main > * {
@@ -263,10 +284,4 @@ footer > * {
   
   
   justify-content: center;
-}
-.f-footer button {
-  width: 10%;
-
-  margin: 2px;
-
 }
