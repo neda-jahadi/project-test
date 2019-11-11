@@ -176,6 +176,14 @@ h1 {
     grid-template-rows: 3em 1fr 1fr 1fr 5em;
     grid-template-columns: 1fr;
   }
+  .f-footer{
+    display: flex;
+   flex-direction: column;
+ }
+ .f-footer button {
+   padding: 3px;
+   margin: 2px;
+ }
 }
 
 
@@ -207,8 +215,10 @@ h1 {
   .f-header, .f-footer {
     grid-column: 1/4;
   }
+  
   .f-footer button {
-    width: 10%;
+    
+    width: 20%;
   
     margin: 2px;
   
