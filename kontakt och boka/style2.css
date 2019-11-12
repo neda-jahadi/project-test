@@ -86,16 +86,18 @@ header, main, footer {
 }
 
 .article > div {
-  border: 1px solid green;
+  border: none;
   border-radius: 5px;
+  padding: 10px;
 }
 .article {
   background-color: rgba(242,242,242,0.6);
-  width: 90%;
+  width: 80%;
+
 }
 .contact {
   display: grid;
-  width: 90%;
+  width: 80%;
   
   grid-template-rows: 3em 1fr;
   grid-gap: 20px;
@@ -136,17 +138,10 @@ h1 {
   }
   footer {
     display: grid;
-    grid-template-rows: 3em 1fr 1fr 1fr 5em;
+    grid-template-rows: 3em 1fr 1fr 1fr 8em;
     grid-template-columns: 1fr;
   }
-   .f-footer{
-     display: flex;
-    flex-direction: column;
-  }
-  .f-footer button {
-    padding: 3px;
-    margin: 2px;
-  }
+   
   
 }
 
@@ -173,17 +168,10 @@ h1 {
   }
   footer {
     display: grid;
-    grid-template-rows: 3em 1fr 1fr 1fr 5em;
+    grid-template-rows: 3em 1fr 1fr 1fr 8em;
     grid-template-columns: 1fr;
   }
-  .f-footer{
-    display: flex;
-   flex-direction: column;
- }
- .f-footer button {
-   padding: 3px;
-   margin: 2px;
- }
+  
 }
 
 
@@ -208,7 +196,7 @@ h1 {
   }
   footer {
     display: grid;
-    grid-template-rows: 3em 1fr 5em;
+    grid-template-rows: 3em 1fr 8em;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 20px;
   }
@@ -216,13 +204,7 @@ h1 {
     grid-column: 1/4;
   }
   
-  .f-footer button {
-    
-    width: 20%;
   
-    margin: 2px;
-  
-  }
   
 }
 
@@ -279,14 +261,14 @@ img {
   
 footer {
   background: url(world.png) 100% 100%;
-  border: 5px solid red;
+  
   
 }
 
 footer > * {
- /* border: 1px solid white;*/
+ 
   background-color: rgba(242,242,242,0.6);
-  padding: 5px;
+  padding: 15px;
 }
 .f-footer {
   background-color: rgba(138,43,226,0.6);
@@ -294,4 +276,38 @@ footer > * {
   
   
   justify-content: center;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 15px 12px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    webkit-transform: scale(1.2,1.2);
+    -ms-transform: scale(1.2,1.2);
+    -o-transform: scale(1.2,1.2);
+    transform: scale(1.2,1.2);
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
 }
