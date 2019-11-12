@@ -285,6 +285,7 @@ footer > * {
   text-align: center;
   text-decoration: none;
   margin: 15px 12px;
+  border-radius: 50%;
 }
 
 .fa:hover {
@@ -310,4 +311,7 @@ footer > * {
 .fa-linkedin {
   background: #007bb5;
   color: white;
+}
+a {
+  text-decoration: none;
 }
