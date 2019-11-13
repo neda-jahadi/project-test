@@ -82,7 +82,8 @@ header, main, footer {
 .container main {
   display: grid;
   justify-items: center;
-  background: url(boka.jpg) 100% 100%;
+  background: url(boka.jpg) no-repeat;
+  background-size: cover;
 }
 
 .article > div {
@@ -177,8 +178,9 @@ h1 {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 768px) {
+  
   .container {
-    grid-template-rows: 5em 1fr 40em;
+    grid-template-rows: 1em 1fr 44em;
   }
   main {
     grid-template-rows: 40em 1fr;
@@ -196,7 +198,7 @@ h1 {
   }
   footer {
     display: grid;
-    grid-template-rows: 3em 1fr 8em;
+    grid-template-rows: 3em 30em 8em;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 20px;
   }
